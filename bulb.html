@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+    
+</head>
+<body>
+<header>
+    <h2 style="padding-left: 550px; padding-top: 40px;">Bulb ON And Of Using JS</h2>
+    <img src="./bulb-off.png" alt="" width="200px" id="bulb" style="padding-left: 600px;">
+    <br><br>
+    <div style="padding-left: 600px;" >
+    <input type="button" value="ON" id="on" style="width: 90px;;" onclick="bulbOn()" >
+    <input type="button" value="OFF" id="off"  style="width: 90px;" onclick="bulbOff()">
+    </div>
+</header>
+</body>
+<script>
+   function bulbOn(){
+
+    document.getElementById("bulb").src='bulb-on.png';
+
+   }
+   function bulbOff(){
+
+    document.getElementById("bulb").src="bulb-off.png"
+
+   }
+</script>
+</html>
